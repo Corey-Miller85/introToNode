@@ -11,7 +11,10 @@ function createProducts() {
 }
 
 const listProducts = array => {
-	array.map(ele => console.log(`${ele.product} sells for \$${ele.price}`));
+	console.log("=====================");
+	console.log("Welcome to the Store!");
+	console.log("=====================");
+	array.map(ele => console.log(`${ele.product} - $${ele.price}`));
 };
 
 listProducts(createProducts());
