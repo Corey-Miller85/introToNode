@@ -3,9 +3,9 @@ const average = testScores => {
 		return acc + current;
 	}, 0);
 	const avg = Math.round(sum / testScores.length);
-	console.log(avg);
+	return avg;
 };
 const scores = [90.98, 100, 89, 100, 86, 94];
 const scores2 = [40, 65, 77, 82, 54, 80, 73, 63, 95, 49];
-average(scores);
-average(scores2);
+console.log(average(scores));
+console.log(average(scores2));
